@@ -1,0 +1,401 @@
+body{
+    background-color: #3D087B;
+    
+    
+}
+.maincontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.leftcontainer{
+    display: grid;
+    grid-template-rows: auto 400px auto 48px;
+    grid-template-columns: auto auto;
+    justify-content: flex-end;
+    gap:25px;
+    
+    
+}
+.clock{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.timeselection{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    
+    border-radius: 8px;
+}
+.greetings{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color:rgba(255, 255, 255, 0.234);
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 5px;
+}
+.rows {
+    width: 450px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lines {
+    margin-left: 16px;
+    border: 1px solid #C2C2C2;
+    height: 200px;
+}
+.names {
+    color: #3D087B;
+    width: 60%;
+}
+
+.smallicon {
+    width: 32px;
+}
+.timeselectioncontainer{
+    
+        
+        
+        height: 380px;
+        background-color: #FFFFFF;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        
+        
+        
+    
+    
+}
+
+select{
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    border: 2px solid #EDEDED;
+}
+button{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(113deg, #6E54EC 0%, #CB52F8 50%, #FC5EFF 91%, #F1A7C5 100%);
+}
+.settimings{
+    grid-row: 4/14;
+    grid-column: 2/3;
+    background-color:rgba(255, 255, 255, 0.234);
+    border-radius: 5px;
+    color:#F25CFE;
+    line-height: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: fit-content;
+    
+   
+}
+.RightContainer {
+    /* border: 2px solid yellow; */
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 80px auto;
+    gap: 20px;
+    justify-content: start;
+
+
+}
+
+.SixComponent {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.SevenComponent {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.EightComponent {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+/* 6rd Component */
+.MainClock_Container {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 150px;
+    position: relative;
+    
+}
+
+
+.MainClock_Container .BlurBg {
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.22;
+    width: 80%;
+    border-radius: 10px;
+    top: 65%;
+    left: 50%;
+    height: 80px;
+    z-index: 1;
+}
+
+.MainClock_Container .BlurBg_2 {
+    background-color: white;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0.71;
+    z-index: 2;
+}
+
+.MainClock_Container .MainClock {
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.MainClock .Time_Box {
+    background-image: url(timeline.jpg);
+    width: 70px;
+    height: 80px;
+    margin: 0px 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.MainClock .Time_text {
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #3D087B;
+    text-transform: uppercase;
+}
+
+.Time_Box span {
+    color: #5F0089;
+    font-size: 18px;
+}
+
+#Time_Hour,
+#Time_Minute,
+#Time_Second,
+#Meridiem {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.MainClock .Meridiem_Box {
+    background-image: url(AM_svg.jpg);
+}
+
+#Meridiem {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* 7th Component  */
+.Message_Container2 {
+    border-radius: 8px;
+    height: 100%;
+    background-color: white;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#DynamicMessage2 {
+    text-transform: uppercase;
+    color: #8E53F0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* 8th Component*/
+#Reminder_Poster {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 929px) {
+    body{
+        overflow: auto;
+    }
+    
+    .maincontainer {
+        flex-direction: column;
+        height: fit-content;
+        
+    
+
+    }
+
+    .leftcontainer {
+        width: 100%;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 405px 80px 80px 150px;
+        justify-content: start;
+        align-content: stretch;
+
+    }
+
+    .clock{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .clock .ClockLogo{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    select{
+        font-size: 15px;
+    }
+    .timeselection{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        
+        border-radius: 8px;
+    }
+    .greetings{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .greetings h1{
+        font-size: 25px;
+    }
+    .rows {
+        width: 100%;
+    }
+    select{
+        width: 50%;
+    }
+    button{
+        grid-row: 4/5;
+        grid-column: 1/2;
+        height: 50px;
+    }
+    .settimings{
+        grid-row: 5/6;
+        grid-column: 1/2;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .RightContainer {
+        width: 100%;
+        gap: 20px;
+        justify-content: stretch;
+        align-content: stretch;
+
+    }
+
+    .MainClock .Time_Box {
+        width: 50px;
+        height: 60px;
+        margin: 0px 5px;
+    }
+
+    #Time_Hour,
+    #Time_Minute,
+    #Time_Second,
+    #Meridiem {
+        font-size: 15px;
+    }
+
+    /* 7th Component  */
+    .Message_Container2 {
+        padding: 0px 5px;
+        
+    }
+
+    #DynamicMessage2 {
+        font-size: 18px;
+        
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 929px) {
+
+    .leftContainer {
+        gap: 20px;
+    }
+    .SetReminder_Container {
+        padding: 10px;
+    }
+    .maincontainer{
+        height: fit-content;
+    }
+    select {
+        width: 285px;
+        border: 1px solid #EDEDED;
+        padding: 15px;
+    }
+
+    .MainClock .Time_Box {
+        width: 70px;
+        height: 80px;
+        margin: 0px 10px;
+    }
+    #Time_Hour,
+    #Time_Minute,
+    #Time_Second,
+    #Meridiem {
+        font-size: 20px;
+    }
+    .Message_Container {
+        font-size: 20px;
+        padding: 0px 10px;
+    
+    }
+
+    .Message_Container2 {
+        padding: 0px 10px;
+    }
+
+    #DynamicMessage2 {
+        font-size: 20px;
+    }
+}
