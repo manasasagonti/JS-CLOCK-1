@@ -17,7 +17,7 @@
                 <div class="rows">
                   <img src="wake_up.jpg" alt="Image-Not-Found" class="smallicon" />
                   <p class="names">Set Wake Up Time</p>
-                  <select name="" id="">
+                  <select name="" id="wakeup">
                     <option value="0">12 AM - 01 AM</option>
                     <option value="1">01 AM - 02 AM</option>
                     <option value="2">02 AM - 03 AM</option>
@@ -50,7 +50,7 @@
                 <div class="rows r">
                   <img src="lunch_time.jpg" alt="Image-Not-Found" class="smallicon" />
                   <p class="names">Set lunch time</p>
-                  <select>
+                  <select id="lunch">
                     <option value="0">12 AM - 01 AM</option>
                     <option value="1">01 AM - 02 AM</option>
                     <option value="2">02 AM - 03 AM</option>
@@ -83,7 +83,7 @@
                 <div class="rows">
                   <img src="nap_time.jpg" alt="Image-Not-Found" class="smallicon" />
                   <p class="names">Set nap time</p>
-                  <select name="" id="">
+                  <select name="" id="nap">
                     <option value="0">12 AM - 01 AM</option>
                     <option value="1">01 AM - 02 AM</option>
                     <option value="2">02 AM - 03 AM</option>
@@ -116,7 +116,7 @@
                 <div class="rows">
                   <img src="Night.png" alt="Image-Not-Found" class="smallicon" />
                   <p class="names">Set night time</p>
-                  <select name="" id="">
+                  <select name="" id="night">
                     <option value="0">12 AM - 01 AM</option>
                     <option value="1">01 AM - 02 AM</option>
                     <option value="2">02 AM - 03 AM</option>
@@ -145,17 +145,17 @@
                 </div>
               </div>
             </div>
-            <div class="greetings">
+            <div id="greetings">
               <h1>GOOD MORNING!! WAKE UP!!!</h1>
             </div>
       
-            <button>Set Alarm</button>
+            <button id="changetext" onmouseover="changecontent()" onmouseout="content()">Set Alarm</button>
       
             <div class="settimings">
-              <p>Wake Up Time: 10AM - 11AM</p>
-              <p>Lunch Time:12PM - 1PM</p>
-              <p>Nap Time: 4PM - 5PM</p>
-              <p>Night Time: 8PM - 9AM</p>
+              <p>Wake Up Time: <span id="wakeuptime"></span></p>
+              <p>Lunch Time: <span id="lunchtime"></span></p>
+              <p>Nap Time:<span id="naptime"></span> </p>
+              <p>Night Time:<span id="nighttime"></span> </p>
             </div>
           </div>
       
@@ -218,5 +218,6 @@
           </div>
            <!-- ENd of right container -->
         </div>
+        <script src="./index.js"></script>
 </body>
 </html>
